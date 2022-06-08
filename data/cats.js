@@ -72,5 +72,11 @@ const cats = [
     isSidekick: true,
   },
 ];
+console.log(
+  cats.map(
+    ({ name, lives, year, isSidekick, type }) =>
+      `('${name}', ${lives}, ${isSidekick}, ${year}, ${type})`
+  )
+);
 
 module.exports = { cats };
